@@ -12,4 +12,9 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font: 400 16px Roboto, sans-serif;
   }
+
+  img {
+    height: 35px;
+    width: 35px;
+  }
 `
