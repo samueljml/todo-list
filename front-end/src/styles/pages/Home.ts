@@ -20,3 +20,8 @@ export const Container = styled.div`
     line-height: 32px;
   }
 `
+
+export const Content = styled.div`
+  width: 60%;
+  padding: 20px 10px;
+`

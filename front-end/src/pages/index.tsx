@@ -1,16 +1,18 @@
 import React from 'react'
-import Head from 'next/head'
+import { Task, Title, Button } from '../components'
 
-import { Container } from '../styles/pages/Home'
+import { Container, Content } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Head>
-        <title>TODO-LIST</title>
-      </Head>
-
-      <h1>TODO-LIST</h1>
+      <Content>
+        <header>
+          <Title text="Todo-list" />
+        </header>
+        <Button text="Adicionar tarefa" />
+        <Task title={'Exemplo'} />
+      </Content>
     </Container>
   )
 }
