@@ -13,7 +13,7 @@ export const Task: FC<TaskProps> = ({ title }) => {
   const handleClick = () => setIsChecked(!isChecked)
 
   return (
-    <Container>
+    <Container onClick={handleClick}>
       <Child>
         {isChecked ? (
           <RiCheckboxCircleFill onClick={handleClick} />
