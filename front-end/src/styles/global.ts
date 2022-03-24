@@ -13,8 +13,8 @@ export default createGlobalStyle`
     font: 400 16px Roboto, sans-serif;
   }
 
-  img {
-    height: 35px;
-    width: 35px;
+  svg {
+    height: 29px;
+    width: 29px;
   }
 `

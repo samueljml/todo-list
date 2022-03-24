@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 import { CgTrash } from 'react-icons/cg'
-import { Container } from './style'
+import { Title, Child, Container, CheckedText } from './style'
 import { RiCheckboxCircleLine, RiCheckboxCircleFill } from 'react-icons/ri'
 
 interface TaskProps {
@@ -14,12 +14,16 @@ export const Task: FC<TaskProps> = ({ title }) => {
 
   return (
     <Container>
-      {isChecked ? (
-        <RiCheckboxCircleFill onClick={handleClick} />
-      ) : (
-        <RiCheckboxCircleLine onClick={handleClick} />
-      )}
-      <div>{title}</div>
+      <Child>
+        {isChecked ? (
+          <RiCheckboxCircleFill onClick={handleClick} />
+        ) : (
+          <RiCheckboxCircleLine onClick={handleClick} />
+        )}
+        <Title>
+          {(isChecked && <CheckedText>{title}</CheckedText>) || title}
+        </Title>
+      </Child>
       <CgTrash />
     </Container>
   )

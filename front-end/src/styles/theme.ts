@@ -6,12 +6,13 @@ const theme = {
     darkGray: '#F6F8FA',
     lightGray: '#E5E5E5',
     gray: '#8E8E8E',
-    white: 'FFFFFF'
+    white: '#FFFFFF'
   },
   sizes: {
     buttonHeigth: '50px',
     buttonFontSize: '16px',
-    titleFontSize: '36px'
+    titleFontSize: '36px',
+    taskHeigth: '76px'
   }
 }
 export default theme
